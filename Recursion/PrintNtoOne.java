@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 public class PrintNtoOne {
 
-    public static void PrintNum(int num)
+    public static void print(int num)
     {
-        if ( num == 0 ) return;
-        System.out.println( num );
-        PrintNum( num-1 );
+        if (num == 0) return; 
+        print(num-1);
+        System.out.println(num);
+        
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner ( System.in );
-        System.out.print("Enter  a nnumber : " );
+        Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        PrintNum(n);
-    }    
+        print(n);
+    }
 }
